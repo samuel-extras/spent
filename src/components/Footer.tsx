@@ -176,14 +176,14 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-                <div>
+                {/* <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     HEAD OFFICE ADDRESS
                   </h3>
                   <address className=" text-black text-base font-normal font-josefinSans">
                     14, owoeye street, ayeyemi, Ondo City, Ondo State,Nigeria.
                   </address>
-                </div>
+                </div> */}
                 <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     BRAND OFFICE ADDRESS{" "}
@@ -192,7 +192,7 @@ const Footer = () => {
                     750 S 43rd street, Grand Forks, North Dakota, 58201{" "}
                   </address>
                 </div>
-                <div>
+                {/* <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     ACADEMY HEAD OFFICE ADDRESS{" "}
                   </h3>
@@ -200,7 +200,7 @@ const Footer = () => {
                     FCT Technology Incubation Centre, FCT Solarhub, ] FCTA
                     Education Secreatriat, Karu Site, FCT-Abuja{" "}
                   </address>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
