@@ -10,19 +10,19 @@ export interface ProductCardProps {
 
 const ProductCard = ({ image, name, description, CTA }: ProductCardProps) => {
   return (
-    <div className="bg-[#54BD95] bg-opacity-5 rounded-[10px] border border-[#027808] p-2.5">
+    <div className="bg-[#54BD95] bg-opacity-5 rounded-[10px] border border-[#027808] p-1.5 sm:p-2.5">
       <Image src={image} alt="" />
-      <div className="pt-5 pb-2.5 px-5 divide-y-2  divide-[#D9D9D9] ">
+      <div className="pt-5 pb-2.5 px-2 lg:px-5 divide-y-2  divide-[#D9D9D9] ">
         <div className="pb-4 inline-flex flex-col gap-3">
-          <h6 className="text-black text-4xl font-semibold font-inter leading-[38.27px]">
+          <h6 className="text-black text-3xl lg:text-4xl font-semibold font-inter leading-[38.27px]">
             {name}
           </h6>
-          <p className="text-black text-xl font-normal font-['Inter'] leading-snug">
+          <p className="text-black text-base sm:text-lg md:text-xl font-normal font-inter leading-snug">
             {description}
           </p>
         </div>
         <div className="flex justify-between items-center pt-4 gap-6">
-          <p className="text-black text-xl font-light font-inter leading-snug">
+          <p className="text-black text-base sm:text-lg md:text-xl font-light font-inter leading-snug">
             {CTA}
           </p>{" "}
           <div className="inline-flex gap-4 xl:gap-6 items-center">

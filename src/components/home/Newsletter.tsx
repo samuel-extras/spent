@@ -4,7 +4,7 @@ const Newsletter = () => {
   return (
     <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
       <div className="w-fit">
-        <h3 className="text-zinc-800 text-5xl font-bold font-jost leading-[51.02px] ">
+        <h3 className="text-zinc-800 text-2xl sm:text-5xl font-bold font-jost leading-[51.02px] ">
           Why choose Spent Digital Labs{" "}
         </h3>
         <svg
@@ -54,10 +54,10 @@ const Newsletter = () => {
               />
             </svg>
 
-            <h6 className="text-indigo-950 text-xl font-semibold font-poppins leading-7">
+            <h6 className="text-indigo-950 text-lg sm:text-xl  font-semibold font-poppins leading-7">
               Expertise
             </h6>
-            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-base font-normal font-poppins leading-7">
+            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-sm sm:text-base font-normal font-poppins leading-7">
               Our multidisciplinary team brings a wealth of experience in
               blockchain development, marketing, and academia.
             </p>
@@ -99,10 +99,10 @@ const Newsletter = () => {
               />
             </svg>
 
-            <h6 className="text-indigo-950 text-xl font-semibold font-poppins leading-7">
+            <h6 className="text-indigo-950 text-lg sm:text-xl  font-semibold font-poppins leading-7">
               Innovation
             </h6>
-            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-base font-normal font-poppins leading-7">
+            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-sm sm:text-base font-normal font-poppins leading-7">
               We stay ahead of the curve, adopting the latest technologies and
               strategies to ensure your success.
             </p>
@@ -145,10 +145,10 @@ const Newsletter = () => {
               />
             </svg>
 
-            <h6 className="text-indigo-950 text-xl font-semibold font-poppins leading-7">
+            <h6 className="text-indigo-950 text-lg sm:text-xl  font-semibold font-poppins leading-7">
               Holistic Approach
             </h6>
-            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-base font-normal font-poppins leading-7">
+            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-sm sm:text-base font-normal font-poppins leading-7">
               Our integrated services cover all aspects of your blockchain
               journey, from development to market adoption.
             </p>
@@ -188,27 +188,27 @@ const Newsletter = () => {
               />
             </svg>
 
-            <h6 className="text-indigo-950 text-xl font-semibold font-poppins leading-7">
+            <h6 className="text-indigo-950 text-lg sm:text-xl  font-semibold font-poppins leading-7">
               Global Impact{" "}
             </h6>
-            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-base font-normal font-poppins leading-7">
+            <p className="max-w-[262px] opacity-80 text-[#2E3E5C] text-sm sm:text-base font-normal font-poppins leading-7">
               Our projects have made waves in industries worldwide, establishing
               us as a trusted global partner.
             </p>
           </div>
         </div>
-        <div className="max-w-md space-y-16">
-          <h6 className=" text-indigo-950 text-[40px] font-bold font-poppins capitalize leading-[52px] tracking-tight">
+        <div className="max-w-md space-y-6 md:space-y-16">
+          <h6 className=" text-indigo-950 text-3xl md:text-[40px] font-bold font-poppins capitalize leading-[52px] tracking-tight">
             How we can help you
             <br />
           </h6>
           <div className="space-y-5">
-            <p className=" opacity-75 text-zinc-900 text-xl font-normal font-poppins leading-9 ml-2 ">
+            <p className=" opacity-75 text-zinc-900 text-base sm:text-xl font-normal font-poppins leading-9 ml-2 ">
               Follow our newsletter. We will regulary update our latest project
               and availability.
             </p>
 
-            <form className="">
+            <form className="w-full">
               <label
                 htmlFor="search"
                 className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -245,7 +245,7 @@ const Newsletter = () => {
                 />
                 <button
                   type="submit"
-                  className="text-white absolute end-2 bottom-2 bg-[#027808] hover:bg-[#027808] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-xl shadow text-lg px-10 py-1.5 font-poppins"
+                  className="text-white absolute end-2 bottom-2 bg-[#027808] hover:bg-[#027808] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-xl shadow sm:text-lg px-4 sm:px-10 py-1.5 font-poppins"
                 >
                   Subscribe
                 </button>

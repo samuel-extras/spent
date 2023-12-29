@@ -18,6 +18,7 @@ const services: ServiceCardProps[] = [
     bg: "bg-[#017707]",
     bg2: "bg-white",
     color: "text-white",
+    href: "/services/blockchain-development",
   },
   {
     description:
@@ -29,6 +30,7 @@ const services: ServiceCardProps[] = [
     bg2: "bg-white",
 
     color: "text-white",
+    href: "/services/web-development",
   },
   {
     description:
@@ -40,6 +42,7 @@ const services: ServiceCardProps[] = [
     bg2: "bg-[#FEE900]",
 
     color: "text-black",
+    href: "/services/crypto-marketing-and-pr",
   },
   {
     description:
@@ -51,6 +54,7 @@ const services: ServiceCardProps[] = [
     bg2: "bg-[#9EFF00]",
 
     color: "text-white",
+    href: "/services/media-and-marketing",
   },
   {
     description:
@@ -62,6 +66,7 @@ const services: ServiceCardProps[] = [
     bg2: "bg-white",
 
     color: "text-white",
+    href: "/services/content-creation",
   },
   {
     description:
@@ -72,13 +77,14 @@ const services: ServiceCardProps[] = [
     bg: "bg-[#027808]",
     bg2: "bg-lime-300",
     color: "text-white",
+    href: "/services/academy",
   },
 ];
 
 const Services = () => {
   return (
     <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
-      <h2 className="text-zinc-800 text-5xl font-bold font-inter leading-[51.02px]">
+      <h2 className="text-zinc-800 text-4xl sm:text-5xl font-bold font-inter leading-[51.02px]">
         By our expertise we offer:
         <svg
           width="193"

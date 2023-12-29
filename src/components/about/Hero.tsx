@@ -4,20 +4,20 @@ import globe from "../../../public/globe.png";
 
 const Hero = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col md:flex-row  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
         <div className="">
           <div className="flex flex-col w-fit">
-            <div className="w-[720px] h-[168px]">
+            <div className="">
               <span className="text-green-800 text-[40px] font-extrabold font-poppins leading-[58.16px] tracking-tight">
                 Welcome to <br />
               </span>
-              <span className="text-green-800 text-6xl font-normal font-inter leading-[87.24px]">
+              <span className="text-green-800 text-4xl sm:text-6xl font-normal font-inter leading-[87.24px]">
                 SPENT DIGITAL LABS
               </span>
             </div>
           </div>
-          <p className="max-w-[691px] text-green-800 text-2xl font-medium font-poppins leading-[45.48px]">
+          <p className="max-w-[691px] text-green-800 text-center sm:text-left text-xl sm:text-2xl font-medium font-poppins sm:leading-[45.48px] mb-10">
             Your premier partner in blockchain development, education, and
             marketing. With a global team of over 20 talented professionals
             spanning the USA, India, Nigeria, Spain, and Dubai, we bring
@@ -37,7 +37,7 @@ const Hero = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         // {...props}
-        className="w-full h-auto"
+        className="sm:w-full w-[120%] h-auto"
       >
         <path
           opacity={0.3}
@@ -54,7 +54,7 @@ const Hero = () => {
           fill="#027808"
         />
       </svg>
-    </>
+    </div>
   );
 };
 

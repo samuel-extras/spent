@@ -2,45 +2,45 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <section className="bg-[#027808] px-6 relative">
-      <div className="bg-[#D9FFDB] rounded-[40px] flex justify-center gap-5 py-10 absolute -top-40 left-1/2 -translate-x-1/2 w-[96%] px-5">
-        <div>
-          <h4 className=" text-center text-cyan-400 text-[64px] font-bold font-montserrat">
+    <section className="bg-[#FF4800] sm:bg-[#027808] px-6 relative">
+      <div className="bg-[#D9FFDB] rounded-[40px] flex justify-center gap-2 lg:gap-5  py-10 absolute -top-20 lg:-top-40 left-1/2 -translate-x-1/2 w-[96%] px-2 lg:px-5">
+        <div className="lg:space-y-4">
+          <h4 className=" text-center text-cyan-400 text-3xl lg:text-[64px] font-bold font-montserrat">
             5
           </h4>
-          <p className="text-center text-red-600 text-[32px] font-semibold font-inter">
+          <p className="text-center text-red-600 text-xs sm:text-sm md:text-lg lg:text-[32px] font-semibold font-inter">
             Years of Operation
           </p>
-          <p className="max-w-sm text-center text-black text-2xl font-normal font-inter leading-[37.50px]">
+          <p className="lg:max-w-sm text-center text-black text-[10px] sm:text-xs md:text-base lg:text-2xl font-normal font-inter lg:leading-[37.50px] leading-normal">
             Of “high-performing” level by a certified project manager
           </p>{" "}
         </div>
-        <div>
-          <h4 className=" text-center text-cyan-400 text-[64px] font-bold font-montserrat">
+        <div className="lg:space-y-4">
+          <h4 className=" text-center text-cyan-400 text-3xl lg:text-[64px] font-bold font-montserrat">
             36+
           </h4>
-          <p className="text-center text-red-600 text-[32px] font-semibold font-inter">
+          <p className="text-center text-red-600 text-xs sm:text-sm md:text-lg lg:text-[32px] font-semibold font-inter">
             Projects Delivered{" "}
           </p>
-          <p className="max-w-sm text-center text-black text-2xl font-normal font-inter leading-[37.50px]">
+          <p className="lg:max-w-sm text-center text-black text-[10px] sm:text-xs md:text-base lg:text-2xl font-normal font-inter lg:leading-[37.50px] leading-normal">
             That meets quality standards required by our users{" "}
           </p>{" "}
         </div>
-        <div>
-          <h4 className=" text-center text-cyan-400 text-[64px] font-bold font-montserrat">
+        <div className="lg:space-y-4">
+          <h4 className=" text-center text-cyan-400 text-3xl lg:text-[64px] font-bold font-montserrat">
             20+{" "}
           </h4>
-          <p className="text-center text-red-600 text-[32px] font-semibold font-inter">
+          <p className="text-center text-red-600 text-xs sm:text-sm md:text-lg lg:text-[32px] font-semibold font-inter">
             Specialist{" "}
           </p>
-          <p className="max-w-sm text-center text-black text-2xl font-normal font-inter leading-[37.50px]">
+          <p className="lg:max-w-sm text-center text-black text-[10px] sm:text-xs md:text-base lg:text-2xl font-normal font-inter lg:leading-[37.50px] leading-normal">
             Actively engage team members that finishes on time{" "}
           </p>{" "}
         </div>
       </div>
-      <div className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-56 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
+      <div className="max-w-[90rem] mx-auto py-20 px-4 sm:px-8 sm:pt-36 lg:pt-56 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
         <div className="w-fit">
-          <h2 className="text-white text-5xl font-bold font-jost leading-[51.02px]">
+          <h2 className="text-white text-4xl sm:text-5xl font-bold font-jost leading-[51.02px]">
             Our Vision{" "}
           </h2>
           <svg
@@ -59,7 +59,7 @@ const Vision = () => {
             />
           </svg>
         </div>
-        <p className="text-center text-white text-opacity-80 text-[28px] font-medium font-poppins leading-[51px]">
+        <p className="text-center text-white text-opacity-80 text-xl sm:text-[28px] font-medium font-poppins leading-[51px]">
           We envision a world where blockchain technology transforms the way we
           interact, transact, and trust. From enhancing transparency and
           efficiency to bolstering security and fostering decentralized

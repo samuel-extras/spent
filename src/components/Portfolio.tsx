@@ -12,7 +12,7 @@ import Link from "next/link";
 const Portfolio = () => {
   return (
     <div className="bg-neutral-50">
-      <div className="relative h-fit ">
+      {/* <div className="relative h-fit ">
         <div className="bg-[#027808] py-6 w-full md:w-3/4">
           <h3 className="text-[#027808] text-4xl font-bold font-inter leading-7 max-w-[90rem] mx-auto px-6">
             CHECKOUT OUR PORTFOLIO{" "}
@@ -23,7 +23,7 @@ const Portfolio = () => {
             CHECKOUT OUR PORTFOLIO{" "}
           </h3>
         </div>
-      </div>
+      </div> */}
       <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
         <div className="flex overflow-x-auto gap-7 no-scrollbar py-4">
           <Link

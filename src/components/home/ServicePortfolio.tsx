@@ -11,9 +11,9 @@ import verysol from "../../../public/verysol.png";
 const ServicePortfolio = () => {
   return (
     <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-10 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit ">
-      <div className="rounded-[60px] bg-[#F1F9F6] px-20 py-[86px]">
+      <div className="md:rounded-[60px] rounded-3xl bg-[#F1F9F6] px-4 py-10 md:px-20 md:py-[86px]">
         <div className="w-fit pb-16">
-          <h2 className="text-zinc-800 text-5xl font-bold font-jost leading-[51.02px]">
+          <h2 className="text-zinc-800 text-4xl sm:text-5xl font-bold font-jost leading-[51.02px]">
             Service Portfolio
           </h2>
           <svg
@@ -32,7 +32,7 @@ const ServicePortfolio = () => {
             />
           </svg>
         </div>
-        <div className="text-black text-xl font-semibold font-inter leading-loose">
+        <p className="text-black  md:text-xl text-sm font-medium md:font-semibold font-inter leading-loose">
           We&apos;re proud to have partnered with an impressive roster of
           clients, including companies, groundbreaking startups, and
           forward-thinking government agencies. Our track record speaks for it
@@ -46,7 +46,7 @@ const ServicePortfolio = () => {
           an arcade, educating aspiring blockchain enthusiasts. This program
           served as a launching pad for several innovative crypto startups,
           making a significant impact in the industry.
-        </div>
+        </p>
         <div className=" flex justify-between pt-28 flex-wrap gap-4">
           <Image width={135} height={129} src={pepito} alt="pepito" />
           <Image width={135} height={129} src={drop} alt="drop" />

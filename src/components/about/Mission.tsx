@@ -2,9 +2,9 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-56 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
+    <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 sm:pb-36 lg:pb-56 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
       <div className="w-fit">
-        <h2 className="text-zinc-800 text-5xl font-bold font-jost leading-[51.02px]">
+        <h2 className="text-zinc-800 text-4xl sm:text-5xl font-bold font-jost leading-[51.02px]">
           Our Mission
         </h2>
         <svg
@@ -23,7 +23,7 @@ const Mission = () => {
           />
         </svg>
       </div>
-      <p className="text-center text-black text-opacity-50 text-[28px] font-medium font-poppins leading-[51px]">
+      <p className="text-center text-black text-opacity-50 text-xl sm:text-[28px] font-medium font-poppins leading-[51px]">
         At Spent Digital Labs, our mission is to be the catalyst that propels
         businesses and individuals into a blockchain-powered future, driven by
         the belief that blockchain technology holds potential to revolutionize

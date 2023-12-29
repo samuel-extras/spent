@@ -89,8 +89,8 @@ const Hero = ({ image, description, title }: HeroProps) => {
         </svg>
       </div>
 
-      <div className="flex flex-col relative w-fit">
-        <h1 className="max-w-[28ch] flex text-center md:text-left  text-green-800 text-5xl font-bold font-inter leading-[51.02px]">
+      <div className=" w-fit">
+        <h1 className="max-w-[28ch] mb-2 flex text-center md:text-left  text-green-800 text-5xl font-bold font-inter leading-[51.02px]">
           {title}
         </h1>
         <svg
@@ -99,7 +99,7 @@ const Hero = ({ image, description, title }: HeroProps) => {
           viewBox="0 0 194 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-1/2 -translate-x-1/2 -bottom-6"
+          className="float-right"
         >
           <path
             d="M4 20C31.0382 7.92602 106.092 -8.97754 190 20"
@@ -110,10 +110,10 @@ const Hero = ({ image, description, title }: HeroProps) => {
         </svg>
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-8 gap-y-14">
-        <div className=" w-full md:w-[50%] h-[445px] flex justify-center items-center">
-          <Image src={image} alt="blockchain" />
+        <div className=" w-full md:w-[50%] h-[445px] flex justify-center items-center ">
+          <Image src={image} alt="blockchain" className="-z-10" />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col gap-y-10 justify-center items-center">
           <div className="bg-[#EBFFE7] rounded-[10px] px-4 w-fit">
             <h4 className=" text-black md:text-[22px] text-xl font-semibold font-poppins leading-[39.14px] tracking-tight">
               Build a chain that will control the world

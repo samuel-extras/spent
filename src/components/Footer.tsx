@@ -2,8 +2,16 @@ import Image from "next/image";
 import React from "react";
 import LogoSVGComponent from "./SVG/Logo";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 const Footer = () => {
+  // const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <>
       <div className="flex flex-wrap justify-center items-center w-full  px-4 sm:px-6 lg:px-24  mx-auto gap-10 py-10">
@@ -32,10 +40,10 @@ const Footer = () => {
       </div>
       <footer className="bg-gray-50 w-full">
         <div className="w-full max-w-[92rem]  px-4 sm:px-6 lg:px-24  mx-auto">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 py-10 lg:py-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10 lg:py-16">
             <div className=" space-y-6">
-              <LogoSVGComponent />
-              <p className="text-black text-lg font-normal font-jost leading-[30px]">
+              <LogoSVGComponent className="mx-auto sm:mx-0" />
+              <p className="text-black text-center sm:text-left text-lg font-normal font-jost leading-[30px]">
                 Welcome to Spent Digital Labs, your premier partner in
                 blockchain development, education, and marketing.{" "}
               </p>
@@ -147,35 +155,109 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-span-1">
+            <div className="col-span-full md:col-span-1">
               <h4 className=" text-neutral-400 text-lg font-semibold font-jost leading-normal tracking-tight">
                 Contact Us{" "}
               </h4>
               <div className="mt-3 grid space-y-3">
-                <Link
-                  href="/"
-                  className="bg-[#027808] rounded-[5px] text-white text-base font-medium font-jost leading-normal tracking-tight py-3 px-8"
-                >
-                  BOOK A MEETING WITH US
-                </Link>
-                <Link
-                  href="/"
-                  className="bg-[#027808] rounded-[5px] text-white text-base font-medium font-jost leading-normal tracking-tight py-3 px-8 inline-flex items-center gap-2"
-                >
-                  DROP A MESSAGE RIGHT AWAY{" "}
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <div className="flex flex-col sm:flex-row md:flex-col gap-4 justify-center md:justify-start">
+                  <Link
+                    href="/"
+                    className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 h-fit"
                   >
-                    <path
-                      d="M12.9991 16.1716L18.3631 10.8076L19.7773 12.2218L11.9991 20L4.22102 12.2218L5.63522 10.8076L10.9991 16.1716V4H12.9991V16.1716Z"
-                      fill="white"
-                    />
-                  </svg>
-                </Link>
+                    BOOK A MEETING WITH US
+                  </Link>
+                  <Collapsible
+                    // open={isOpen}
+                    // onOpenChange={setIsOpen}
+                    className="w-[350px] space-y-2"
+                  >
+                    <CollapsibleTrigger asChild>
+                      <Button className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 inline-flex items-center gap-2">
+                        DROP A MESSAGE RIGHT AWAY{" "}
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.9991 16.1716L18.3631 10.8076L19.7773 12.2218L11.9991 20L4.22102 12.2218L5.63522 10.8076L10.9991 16.1716V4H12.9991V16.1716Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </Button>
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="space-y-2">
+                      <div className="bg-white px-4 py-4  rounded-[20px]">
+                        <form className="mx-auto max-w-xl ">
+                          <div className="grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2">
+                            <div>
+                              <label
+                                htmlFor="name"
+                                className="hidden text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                name
+                              </label>
+                              <div className="mt-2.5">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  id="name"
+                                  autoComplete="given-name"
+                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <label
+                                htmlFor="email"
+                                className="hidden text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                email
+                              </label>
+                              <div className="mt-2.5">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  id="email"
+                                  autoComplete="email"
+                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                  placeholder="Email"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-span-full">
+                              <label
+                                htmlFor="message"
+                                className="hidden text-sm font-semibold leading-6 text-gray-900"
+                              >
+                                message
+                              </label>
+                              <div className="mt-2.5">
+                                <textarea
+                                  name="message"
+                                  id="message"
+                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                  placeholder="Type your message..."
+                                  rows={3}
+                                />
+                              </div>
+                            </div>
+                            <button
+                              type="submit"
+                              className="block w-full rounded-[10px] bg-[#062301] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#062301] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#062301] col-span-full font-jost"
+                            >
+                              SUBMIT{" "}
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
+                </div>
                 {/* <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     HEAD OFFICE ADDRESS
@@ -185,10 +267,10 @@ const Footer = () => {
                   </address>
                 </div> */}
                 <div>
-                  <h3 className="text-black text-xl font-bold font-josefinSans">
+                  <h3 className="text-black text-center md:text-left text-xl font-bold font-josefinSans">
                     BRAND OFFICE ADDRESS{" "}
                   </h3>
-                  <address className=" text-black text-base font-normal font-josefinSans">
+                  <address className=" text-black text-base text-center md:text-left font-normal font-josefinSans">
                     750 S 43rd street, Grand Forks, North Dakota, 58201{" "}
                   </address>
                 </div>
@@ -206,7 +288,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center items-center bg-green-100 w-full mx-auto py-4">
-          <p className="text-black text-2xl text-center font-normal font-josefinSans ">
+          <p className="text-black text-base md:text-2xl text-center font-normal font-josefinSans ">
             Copyright ©2023 Spent Digital Labs. All rights reserved.
           </p>
         </div>

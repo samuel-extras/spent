@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col md:flex-row  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit  ">
-        <div className="">
+        <div className="w-full space-y-16">
           <div className="flex flex-col w-fit">
-            <h1 className="max-w-[16ch] flex text-center md:text-left  text-[72px] font-bold font-inter leading-[80px]">
+            <h1 className="lg:max-w-[16ch] flex text-center lg:text-left text-5xl  sm:text-[72px] font-bold font-inter leading-[80px]">
               We’re here to Increase your Productivity{" "}
             </h1>
             <svg
@@ -32,7 +32,25 @@ export default function Home() {
               />
             </svg>
           </div>
-          <p className="max-w-[562px]">
+          <div className=" w-full lg:hidden flex flex-col justify-center items-center sm:px-20 md:px-40 lg:px-0 ">
+            <Image src={Blockchain} alt="blockchain" />
+            <button className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex text-center justify-between items-center py-3 px-16 w-full">
+              Let’s Chat{" "}
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <p className="max-w-[562px] text-center lg:text-left  mx-auto lg:mx-0">
             <span className="text-black text-4xl font-normal font-inter leading-[46.50px] tracking-[3.06px]">
               Welcome to <br />
             </span>
@@ -58,7 +76,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=" w-full md:w-[50%] flex flex-col justify-center items-center ">
+        <div className=" w-full md:w-[50%] hidden lg:flex flex-col justify-center items-center ">
           <Image src={Blockchain} alt="blockchain" />
           <button className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex text-center justify-between items-center py-3 px-16 w-full">
             Let’s Chat{" "}

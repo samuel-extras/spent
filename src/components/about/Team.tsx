@@ -32,9 +32,29 @@ const Team = () => {
         />
       </svg>
 
-      <div className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-32 lg:p-20 lg:pb-0  w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="w-fit self-center">
+      <div className="max-w-[90rem] mx-auto pb-20  sm:py-20 px-6 sm:px-8 lg:pt-32 lg:p-20 lg:pb-0  w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative  2xl:min-h-fit  ">
+        <div className="sm:hidden w-fit -mt-8">
+          <h2 className="text-black text-3xl  font-bold font-jost leading-[51.02px]">
+            Our Team{" "}
+          </h2>
+          <svg
+            width="194"
+            height="24"
+            viewBox="0 0 194 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="float-right w-20 -mt-4"
+          >
+            <path
+              d="M4 20C31.0382 7.92602 106.092 -8.97754 190 20"
+              stroke="#FEE900"
+              strokeWidth="8"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
+        <div className="grid grid-cols-4 sm:grid-cols-2 gap-3 sm:gap-6">
+          <div className="hidden sm:block w-fit self-center">
             <h2 className="text-white text-5xl font-bold font-jost leading-[51.02px]">
               Our Team{" "}
             </h2>
@@ -54,106 +74,93 @@ const Team = () => {
               />
             </svg>
           </div>
-          <div className="bg-white rounded-2xl shadow p-4 flex gap-6 items-center">
-            <Image
-              src={teammember}
-              alt=""
-              width={188}
-              height={188}
-              className="rounded-lg"
-            />
-            <div className="space-y-[6px]">
-              <p className=" text-slate-800 text-xl font-semibold font-montserrat">
+          <div className="sm:bg-white rounded-2xl sm:shadow sm:p-4 flex flex-col sm:flex-row gap-2 sm:gap-6 items-center ">
+            <div className="sm:w-[35%] w-full h-full">
+              <Image
+                src={teammember}
+                alt=""
+                // width={188}
+                // height={188}
+                className="rounded-lg border-2 border-emerald-400 sm:border-transparent"
+              />
+            </div>
+            <div className="sm:space-y-[6px] flex-1">
+              <p className=" sm:text-slate-800 text-white text-[10px] sm:text-sm lg:text-xl text-center sm:text-left font-semibold font-montserrat">
                 William Pearce
               </p>
-              <p className=" text-cyan-400 text-base font-semibold font-poppins">
+              <p className="text-[#FF4800] sm:text-cyan-400 text-[10px] sm:text-xs lg:text-base text-center sm:text-left font-semibold font-poppins">
                 Spent Manager
               </p>
-              <p className=" text-slate-500 text-base font-normal font-inter leading-relaxed">
+              <p className="hidden sm:block text-slate-500 text-xs lg:text-base font-normal font-inter leading-relaxed">
                 Artist is a term applied to a person who engages in an activity
                 deemed to be an art.
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-2xl shadow p-4 flex gap-6 items-center">
-            <Image
-              src={teammember}
-              alt=""
-              width={188}
-              height={188}
-              className="rounded-lg"
-            />
-            <div className="space-y-[6px]">
-              <p className=" text-slate-800 text-xl font-semibold font-montserrat">
+          <div className="sm:bg-white rounded-2xl sm:shadow sm:p-4 flex flex-col sm:flex-row gap-2 sm:gap-6 items-center ">
+            <div className="sm:w-[35%] w-full h-full">
+              <Image
+                src={teammember}
+                alt=""
+                // width={188}
+                // height={188}
+                className="rounded-lg border-2 border-emerald-400 sm:border-transparent"
+              />
+            </div>
+            <div className="sm:space-y-[6px] flex-1">
+              <p className=" sm:text-slate-800 text-white text-[10px] sm:text-sm lg:text-xl text-center sm:text-left font-semibold font-montserrat">
                 William Pearce
               </p>
-              <p className=" text-cyan-400 text-base font-semibold font-poppins">
+              <p className="text-[#FF4800] sm:text-cyan-400 text-[10px] sm:text-xs lg:text-base text-center sm:text-left font-semibold font-poppins">
                 Spent Manager
               </p>
-              <p className=" text-slate-500 text-base font-normal font-inter leading-relaxed">
+              <p className="hidden sm:block text-slate-500 text-xs lg:text-base font-normal font-inter leading-relaxed">
                 Artist is a term applied to a person who engages in an activity
                 deemed to be an art.
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-2xl shadow p-4 flex gap-6 items-center">
-            <Image
-              src={teammember}
-              alt=""
-              width={188}
-              height={188}
-              className="rounded-lg"
-            />
-            <div className="space-y-[6px]">
-              <p className=" text-slate-800 text-xl font-semibold font-montserrat">
+          <div className="sm:bg-white rounded-2xl sm:shadow sm:p-4 flex flex-col sm:flex-row gap-2 sm:gap-6 items-center ">
+            <div className="sm:w-[35%] w-full h-full">
+              <Image
+                src={teammember}
+                alt=""
+                // width={188}
+                // height={188}
+                className="rounded-lg border-2 border-emerald-400 sm:border-transparent"
+              />
+            </div>
+            <div className="sm:space-y-[6px] flex-1">
+              <p className=" sm:text-slate-800 text-white text-[10px] sm:text-sm lg:text-xl text-center sm:text-left font-semibold font-montserrat">
                 William Pearce
               </p>
-              <p className=" text-cyan-400 text-base font-semibold font-poppins">
+              <p className="text-[#FF4800] sm:text-cyan-400 text-[10px] sm:text-xs lg:text-base text-center sm:text-left font-semibold font-poppins">
                 Spent Manager
               </p>
-              <p className=" text-slate-500 text-base font-normal font-inter leading-relaxed">
+              <p className="hidden sm:block text-slate-500 text-xs lg:text-base font-normal font-inter leading-relaxed">
                 Artist is a term applied to a person who engages in an activity
                 deemed to be an art.
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-2xl shadow p-4 flex gap-6 items-center">
-            <Image
-              src={teammember}
-              alt=""
-              width={188}
-              height={188}
-              className="rounded-lg"
-            />
-            <div className="space-y-[6px]">
-              <p className=" text-slate-800 text-xl font-semibold font-montserrat">
-                William Pearce
-              </p>
-              <p className=" text-cyan-400 text-base font-semibold font-poppins">
-                Spent Manager
-              </p>
-              <p className=" text-slate-500 text-base font-normal font-inter leading-relaxed">
-                Artist is a term applied to a person who engages in an activity
-                deemed to be an art.
-              </p>
+          <div className="sm:bg-white rounded-2xl sm:shadow sm:p-4 flex flex-col sm:flex-row gap-2 sm:gap-6 items-center ">
+            <div className="sm:w-[35%] w-full h-full">
+              <Image
+                src={teammember}
+                alt=""
+                // width={188}
+                // height={188}
+                className="rounded-lg border-2 border-emerald-400 sm:border-transparent"
+              />
             </div>
-          </div>
-          <div className="bg-white rounded-2xl shadow p-4 flex gap-6 items-center">
-            <Image
-              src={teammember}
-              alt=""
-              width={188}
-              height={188}
-              className="rounded-lg"
-            />
-            <div className="space-y-[6px]">
-              <p className=" text-slate-800 text-xl font-semibold font-montserrat">
+            <div className="sm:space-y-[6px] flex-1">
+              <p className=" sm:text-slate-800 text-white text-[10px] sm:text-sm lg:text-xl text-center sm:text-left font-semibold font-montserrat">
                 William Pearce
               </p>
-              <p className=" text-cyan-400 text-base font-semibold font-poppins">
+              <p className="text-[#FF4800] sm:text-cyan-400 text-[10px] sm:text-xs lg:text-base text-center sm:text-left font-semibold font-poppins">
                 Spent Manager
               </p>
-              <p className=" text-slate-500 text-base font-normal font-inter leading-relaxed">
+              <p className="hidden sm:block text-slate-500 text-xs lg:text-base font-normal font-inter leading-relaxed">
                 Artist is a term applied to a person who engages in an activity
                 deemed to be an art.
               </p>

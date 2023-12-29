@@ -23,7 +23,7 @@ const More = ({ heading, card }: MoreProps) => {
   return (
     <div className="bg-neutral-50">
       <div className="relative h-fit ">
-        <div className="bg-[#027808] py-6 w-full md:w-3/4">
+        <div className="bg-[#027808] py-6 w-full lg:w-3/4">
           <h3 className="text-[#027808] text-4xl font-bold font-inter leading-7 max-w-[90rem] mx-auto px-6">
             {heading}
           </h3>
@@ -35,9 +35,12 @@ const More = ({ heading, card }: MoreProps) => {
         </div>
       </div>
       <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
-        <div className="grid  sm:grid-cols-2  md:grid-cols-3 gap-x-10 gap-y-20 py-4 ">
+        <div className="grid  sm:grid-cols-2  lg:grid-cols-3 gap-x-10 gap-y-20 py-4 ">
           {card.map((x) => (
-            <div key={x.heading} className="space-y-8 ">
+            <div
+              key={x.heading}
+              className="flex flex-col justify-between gap-y-8 "
+            >
               <div className="flex gap-4">
                 {x.svg}
                 <h3 className="text-green-800 text-xl font-bold font-inter max-w-[24ch]">
