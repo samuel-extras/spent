@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import LogoSVGComponent from "./SVG/Logo";
@@ -8,51 +9,34 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
   // const [isOpen, setIsOpen] = React.useState(false);
+  const pathname = usePathname();
+  console.log(pathname);
 
   return (
-    <>
-      <div className="flex flex-wrap justify-center items-center w-full  px-4 sm:px-6 lg:px-24  mx-auto gap-10 py-10">
-        {" "}
-        <p className="text-black text-xl font-medium font-jost leading-normal tracking-tight">
-          Ready to get started?
-        </p>
-        <button className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex px-24 text-center justify-center items-center py-3 gap-2">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19.95 21C17.8667 21 15.8083 20.5457 13.775 19.637C11.7417 18.7283 9.89167 17.441 8.225 15.775C6.55833 14.1083 5.271 12.2583 4.363 10.225C3.455 8.19167 3.00067 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07933 8.725 3.238C8.90833 3.39667 9.01667 3.584 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.704 12.1123 8.162 12.687C8.62 13.2617 9.12433 13.816 9.675 14.35C10.1917 14.8667 10.7333 15.346 11.3 15.788C11.8667 16.23 12.4667 16.634 13.1 17L15.45 14.65C15.6 14.5 15.796 14.3873 16.038 14.312C16.28 14.2367 16.5173 14.216 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1377 20.775 15.313C20.925 15.4883 21 15.684 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z"
-              fill="white"
-            />
-          </svg>
-          Call Us{" "}
-        </button>
-        <button className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex text-center justify-center items-center py-3 px-16">
-          BOOK A MEETING WITH US{" "}
-        </button>
-      </div>
-      <footer className="bg-gray-50 w-full">
-        <div className="w-full max-w-[92rem]  px-4 sm:px-6 lg:px-24  mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10 lg:py-16">
-            <div className=" space-y-6">
-              <LogoSVGComponent className="mx-auto sm:mx-0" />
-              <p className="text-black text-center sm:text-left text-lg font-normal font-jost leading-[30px]">
-                Welcome to Spent Digital Labs, your premier partner in
-                blockchain development, education, and marketing.{" "}
+    <footer
+      className={`bg-gray-50 w-full ${
+        pathname == "/contact-us" ? " hidden" : ""
+      }`}
+    >
+      <div className="w-full max-w-[92rem]  px-4 sm:px-6 lg:px-24  mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10 lg:py-16">
+          <div className=" space-y-6">
+            <LogoSVGComponent className="mx-auto sm:mx-0" />
+            <p className="text-black text-center sm:text-left text-lg font-normal font-jost leading-[30px]">
+              Welcome to Spent Digital Labs, your premier partner in blockchain
+              development, education, and marketing.{" "}
+            </p>
+            <div className="space-y-4 pt-3">
+              <p className="text-[#027808] text-2xl font-normal font-josefinSans">
+                Follow us on all socials
               </p>
-              <div className="space-y-4 pt-3">
-                <p className="text-[#027808] text-2xl font-normal font-josefinSans">
-                  Follow us on all socials
-                </p>
-                <ul className="flex gap-6 flex-wrap">
-                  <li>
+              <ul className="flex gap-6 flex-wrap">
+                <li>
+                  <Link href="https://facebook.com/spentdigilabs">
                     <svg
                       width={28}
                       height={28}
@@ -65,8 +49,10 @@ const Footer = () => {
                         fill="#027808"
                       />
                     </svg>
-                  </li>
-                  <li>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://twitter.com/spentdigilabs">
                     <svg
                       width={28}
                       height={28}
@@ -79,8 +65,10 @@ const Footer = () => {
                         fill="#027808"
                       />
                     </svg>
-                  </li>
-                  <li>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://instagram.com/spentdigilabs">
                     <svg
                       width={28}
                       height={28}
@@ -93,8 +81,10 @@ const Footer = () => {
                         fill="#027808"
                       />
                     </svg>
-                  </li>
-                  <li>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://linkedin.com/spentdigilabs">
                     <svg
                       width="28"
                       height="28"
@@ -107,8 +97,10 @@ const Footer = () => {
                         fill="#027808"
                       />
                     </svg>
-                  </li>
-                  <li>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="http://t.me/Spentdigitallabs">
                     <svg
                       width="28"
                       height="28"
@@ -121,144 +113,166 @@ const Footer = () => {
                         fill="#027808"
                       />
                     </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-span-1 lg:pl-8">
-              <h4 className=" text-neutral-400 text-lg font-semibold font-jost leading-normal tracking-tight">
-                Services
-              </h4>
-              <div className="mt-3 grid space-y-3">
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Blockchain
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Web Development
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Mobile App Development
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Game Development
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Media Marketing
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Content Creation
-                </p>
-                <p className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide">
-                  Digital Skill Training
-                </p>
-              </div>
-            </div>
-
-            <div className="col-span-full md:col-span-1">
-              <h4 className=" text-neutral-400 text-lg font-semibold font-jost leading-normal tracking-tight">
-                Contact Us{" "}
-              </h4>
-              <div className="mt-3 grid space-y-3">
-                <div className="flex flex-col sm:flex-row md:flex-col gap-4 justify-center md:justify-start">
-                  <Link
-                    href="/"
-                    className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 h-fit"
-                  >
-                    BOOK A MEETING WITH US
                   </Link>
-                  <Collapsible
-                    // open={isOpen}
-                    // onOpenChange={setIsOpen}
-                    className="w-[350px] space-y-2"
-                  >
-                    <CollapsibleTrigger asChild>
-                      <Button className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 inline-flex items-center gap-2">
-                        DROP A MESSAGE RIGHT AWAY{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.9991 16.1716L18.3631 10.8076L19.7773 12.2218L11.9991 20L4.22102 12.2218L5.63522 10.8076L10.9991 16.1716V4H12.9991V16.1716Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Button>
-                    </CollapsibleTrigger>
-                    <CollapsibleContent className="space-y-2">
-                      <div className="bg-white px-4 py-4  rounded-[20px]">
-                        <form className="mx-auto max-w-xl ">
-                          <div className="grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2">
-                            <div>
-                              <label
-                                htmlFor="name"
-                                className="hidden text-sm font-semibold leading-6 text-gray-900"
-                              >
-                                name
-                              </label>
-                              <div className="mt-2.5">
-                                <input
-                                  type="text"
-                                  name="name"
-                                  id="name"
-                                  autoComplete="given-name"
-                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
-                                  placeholder="Name"
-                                />
-                              </div>
-                            </div>
-                            <div>
-                              <label
-                                htmlFor="email"
-                                className="hidden text-sm font-semibold leading-6 text-gray-900"
-                              >
-                                email
-                              </label>
-                              <div className="mt-2.5">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  id="email"
-                                  autoComplete="email"
-                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
-                                  placeholder="Email"
-                                />
-                              </div>
-                            </div>
-                            <div className="col-span-full">
-                              <label
-                                htmlFor="message"
-                                className="hidden text-sm font-semibold leading-6 text-gray-900"
-                              >
-                                message
-                              </label>
-                              <div className="mt-2.5">
-                                <textarea
-                                  name="message"
-                                  id="message"
-                                  className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
-                                  placeholder="Type your message..."
-                                  rows={3}
-                                />
-                              </div>
-                            </div>
-                            <button
-                              type="submit"
-                              className="block w-full rounded-[10px] bg-[#062301] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#062301] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#062301] col-span-full font-jost"
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-span-1 lg:pl-8">
+            <h4 className=" text-neutral-400 text-lg font-semibold font-jost leading-normal tracking-tight">
+              Services
+            </h4>
+            <div className="mt-3 grid space-y-3">
+              <Link
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+                href="/services/blockchain-development"
+              >
+                Blockchain
+              </Link>
+              <Link
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+                href="/services/web-development"
+              >
+                Web Development
+              </Link>
+              <Link
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+                href="/services/web-development"
+              >
+                Mobile App Development
+              </Link>
+              <Link
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+                href="/services/web-development"
+              >
+                Game Development
+              </Link>
+              <Link
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+                href="/services/media-and-marketing"
+              >
+                Media Marketing
+              </Link>
+              <Link
+                href="/services/content-creation"
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+              >
+                Content Creation
+              </Link>
+              <Link
+                href="/services/academy"
+                className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
+              >
+                Digital Skill Training
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-span-full md:col-span-1">
+            <h4 className=" text-neutral-400 text-lg font-semibold font-jost leading-normal tracking-tight">
+              Contact Us{" "}
+            </h4>
+            <div className="mt-3 grid space-y-3">
+              <div className="flex flex-col sm:flex-row md:flex-col gap-4 justify-center md:justify-start">
+                <Link
+                  href="/"
+                  className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 h-fit"
+                >
+                  BOOK A MEETING WITH US
+                </Link>
+                <Collapsible
+                  // open={isOpen}
+                  // onOpenChange={setIsOpen}
+                  className="w-[350px] space-y-2"
+                >
+                  <CollapsibleTrigger asChild>
+                    <Button className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 inline-flex items-center gap-2">
+                      DROP A MESSAGE RIGHT AWAY{" "}
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.9991 16.1716L18.3631 10.8076L19.7773 12.2218L11.9991 20L4.22102 12.2218L5.63522 10.8076L10.9991 16.1716V4H12.9991V16.1716Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="space-y-2">
+                    <div className="bg-white px-4 py-4  rounded-[20px]">
+                      <form className="mx-auto max-w-xl ">
+                        <div className="grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2">
+                          <div>
+                            <label
+                              htmlFor="name"
+                              className="hidden text-sm font-semibold leading-6 text-gray-900"
                             >
-                              SUBMIT{" "}
-                            </button>
+                              name
+                            </label>
+                            <div className="mt-2.5">
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                autoComplete="given-name"
+                                className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                placeholder="Name"
+                              />
+                            </div>
                           </div>
-                        </form>
-                      </div>
-                    </CollapsibleContent>
-                  </Collapsible>
-                </div>
-                {/* <div>
+                          <div>
+                            <label
+                              htmlFor="email"
+                              className="hidden text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              email
+                            </label>
+                            <div className="mt-2.5">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                autoComplete="email"
+                                className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                placeholder="Email"
+                              />
+                            </div>
+                          </div>
+                          <div className="col-span-full">
+                            <label
+                              htmlFor="message"
+                              className="hidden text-sm font-semibold leading-6 text-gray-900"
+                            >
+                              message
+                            </label>
+                            <div className="mt-2.5">
+                              <textarea
+                                name="message"
+                                id="message"
+                                className="block w-full rounded-[10px] border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#062301] sm:text-sm sm:leading-6 bg-[#D9D9D9] "
+                                placeholder="Type your message..."
+                                rows={3}
+                              />
+                            </div>
+                          </div>
+                          <button
+                            type="submit"
+                            className="block w-full rounded-[10px] bg-[#062301] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#062301] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#062301] col-span-full font-jost"
+                          >
+                            SUBMIT{" "}
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+              {/* <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     HEAD OFFICE ADDRESS
                   </h3>
@@ -266,15 +280,15 @@ const Footer = () => {
                     14, owoeye street, ayeyemi, Ondo City, Ondo State,Nigeria.
                   </address>
                 </div> */}
-                <div>
-                  <h3 className="text-black text-center md:text-left text-xl font-bold font-josefinSans">
-                    BRAND OFFICE ADDRESS{" "}
-                  </h3>
-                  <address className=" text-black text-base text-center md:text-left font-normal font-josefinSans">
-                    750 S 43rd street, Grand Forks, North Dakota, 58201{" "}
-                  </address>
-                </div>
-                {/* <div>
+              <div className="pt-20">
+                <h3 className="text-black text-center md:text-left text-xl font-bold font-josefinSans">
+                  BRAND OFFICE ADDRESS{" "}
+                </h3>
+                <address className=" text-black text-base text-center md:text-left font-normal font-josefinSans">
+                  750 S 43rd street, Grand Forks, North Dakota, 58201{" "}
+                </address>
+              </div>
+              {/* <div>
                   <h3 className="text-black text-xl font-bold font-josefinSans">
                     ACADEMY HEAD OFFICE ADDRESS{" "}
                   </h3>
@@ -283,17 +297,16 @@ const Footer = () => {
                     Education Secreatriat, Karu Site, FCT-Abuja{" "}
                   </address>
                 </div> */}
-              </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center bg-green-100 w-full mx-auto py-4">
-          <p className="text-black text-base md:text-2xl text-center font-normal font-josefinSans ">
-            Copyright ©2023 Spent Digital Labs. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    </>
+      </div>
+      <div className="flex justify-center items-center bg-green-100 w-full mx-auto py-4">
+        <p className="text-black text-base md:text-2xl text-center font-normal font-josefinSans ">
+          Copyright ©2023 Spent Digital Labs. All rights reserved.
+        </p>
+      </div>
+    </footer>
   );
 };
 
