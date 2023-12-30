@@ -31,7 +31,7 @@ import {
 const Header = () => {
   return (
     <nav className="w-full sm:shadow-md py-3  px-6 sm:px-8 xl:px-28 sm:bg-white">
-      <div className="w-full max-w-[90rem] mx-auto flex justify-between items-center">
+      <div className="w-full max-w-[90rem] mx-auto flex justify-between items-center overflow-hidden">
         {/* <Image
         alt="logo"
         src="/logo.png"
