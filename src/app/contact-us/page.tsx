@@ -127,7 +127,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between px-16 gap-6">
+            <div className="flex flex-col md:flex-row justify-between px-16 gap-6">
               <Link
                 href="/"
                 className="bg-[#027808] rounded-[5px] text-white text-base font-medium font-jost leading-normal tracking-tight py-3 px-8 inline-flex gap-3"
