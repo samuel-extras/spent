@@ -35,7 +35,10 @@ export default function Home() {
           </div>
           <div className=" w-full lg:hidden flex flex-col justify-center items-center sm:px-20 md:px-40 lg:px-0 ">
             <Image src={Blockchain} alt="blockchain" />
-            <button className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex text-center justify-between items-center py-3 px-16 w-full">
+            <Link
+              href="http://t.me/Spentdigitallabs"
+              className="text-white text-lg font-bold font-inter bg-[#027808] rounded-[10px] flex text-center justify-between items-center py-3 px-16 w-full"
+            >
               Let’s Chat{" "}
               <svg
                 width="24"
@@ -49,7 +52,7 @@ export default function Home() {
                   fill="white"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
           <p className="max-w-[562px] text-3xl xl:text-4xl lg:text-3xl text-center lg:text-left  mx-auto lg:mx-0">
             <span className="text-black font-normal font-inter leading-[46.50px] tracking-[3.06px]">

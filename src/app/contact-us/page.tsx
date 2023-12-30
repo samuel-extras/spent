@@ -6,14 +6,14 @@ import man from "../../../public/contact.png";
 const page = () => {
   return (
     <>
-      <div className="bg-[#027808] py-9">
+      <div className="bg-[#027808] py-9 overflow-hidden w-full">
         <div>
           <h2 className="text-center text-white text-[32px] font-bold font-inter leading-10">
             Contact us
           </h2>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex overflow-hidden">
         <div className="w-[40%] hidden md:block">
           <Image alt="" src={man} />
         </div>
