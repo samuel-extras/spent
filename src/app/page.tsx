@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col md:flex-row  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit  ">
+      <section className="max-w-[90rem] mx-auto py-20 px-4 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col md:flex-row  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit  ">
         <div className="w-full space-y-16 lg:space-y-0">
           <div className="flex flex-col w-fit">
             <h1 className="lg:max-w-[16ch] flex text-center lg:text-left text-5xl  sm:text-[72px] lg:text-6xl xl:text-[72px] font-bold font-inter sm:leading-[60px] lg:leading-[60px] xl:leading-[80px]">

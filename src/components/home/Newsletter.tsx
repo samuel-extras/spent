@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
+    <section className="max-w-[90rem] mx-auto py-20 px-4 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit">
       <div className="w-fit">
         <h3 className="text-zinc-800 text-2xl sm:text-5xl font-bold font-jost leading-[51.02px] ">
           Why choose Spent Digital Labs{" "}

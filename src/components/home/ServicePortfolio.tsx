@@ -10,9 +10,9 @@ import verysol from "../../../public/verysol.png";
 
 const ServicePortfolio = () => {
   return (
-    <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-10 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit ">
+    <section className="max-w-[90rem] mx-auto py-20 px-4 sm:px-8 lg:pt-20 lg:p-10 lg:pb-20 w-full grow flex flex-col  md:gap-20 md:overflow-hidden relative min-h-screen 2xl:min-h-fit ">
       <div className="md:rounded-[60px] rounded-3xl bg-[#F1F9F6]  py-10  md:py-[86px]">
-        <div className="px-4 md:px-20">
+        <div className="px-3 md:px-20">
           <div className="w-fit pb-16">
             <h2 className="text-zinc-800 text-4xl sm:text-5xl font-bold font-jost leading-[51.02px]">
               Service Portfolio

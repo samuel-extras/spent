@@ -30,7 +30,7 @@ import {
 
 const Header = () => {
   return (
-    <nav className="w-full sm:shadow-md py-3  px-6 sm:px-8 xl:px-28 sm:bg-white">
+    <nav className="w-full sm:shadow-md py-3  px-4 sm:px-8 xl:px-28 sm:bg-white">
       <div className="w-full max-w-[90rem] mx-auto flex justify-between items-center overflow-hidden">
         {/* <Image
         alt="logo"
@@ -64,13 +64,22 @@ const Header = () => {
           <SheetContent className="">
             <SheetHeader>
               <SheetTitle className="hidden">spent digital lab</SheetTitle>
-              <Link href="/" className="flex-1">
+              <Link
+                //  href="/"
+                href="#"
+                className="flex-1"
+              >
                 <LogoSVGComponent />
               </Link>{" "}
             </SheetHeader>
             <ul className="py-10 space-y-6">
               <li className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
-                <Link href="/about">About Us</Link>
+                <Link
+                  // href="/about"
+                  href="#"
+                >
+                  About Us
+                </Link>
               </li>
               <li>
                 <Collapsible>
@@ -80,37 +89,43 @@ const Header = () => {
                   <CollapsibleContent>
                     <div className=" max-w-xs flex-auto overflow-hidden bg-[#027708] text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 grid py-5 px-8 gap-y-7 gap-x-3">
                       <Link
-                        href="/services/content-creation"
+                        // href="/services/content-creation"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Content Creation{" "}
                       </Link>
                       <Link
-                        href="/services/academy"
+                        // href="/services/academy"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Academy{" "}
                       </Link>
                       <Link
-                        href="/services/blockchain-development"
+                        // href="/services/blockchain-development"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Blockchain Services{" "}
                       </Link>
                       <Link
-                        href="/services/media-and-marketing"
+                        // href="/services/media-and-marketing"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Media & Marketing{" "}
                       </Link>
                       <Link
-                        href="/services/crypto-marketing-and-pr"
+                        // href="/services/crypto-marketing-and-pr"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Crypto Marketing & PR{" "}
                       </Link>
                       <Link
-                        href="/services/web-development"
+                        // href="/services/web-development"
+                        href="#"
                         className="text-white text-[15px] font-semibold font-poppins leading-7"
                       >
                         Web Development{" "}
@@ -120,10 +135,20 @@ const Header = () => {
                 </Collapsible>
               </li>
               <li className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
-                <Link href="/portfolio">Portfolio</Link>
+                <Link
+                  // href="/portfolio"
+                  href="#"
+                >
+                  Portfolio
+                </Link>
               </li>
               <li className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
-                <Link href="/contact-us">Contact Us</Link>
+                <Link
+                  //  href="/contact-us"
+                  href="#"
+                >
+                  Contact Us
+                </Link>
               </li>
               <li className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
                 <Modal />
@@ -135,7 +160,12 @@ const Header = () => {
         <NavigationMenu>
           <NavigationMenuList className="lg:flex gap-4 items-center hidden ">
             <NavigationMenuItem className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
-              <Link href="/about" legacyBehavior passHref>
+              <Link
+                // href="/about"
+                href="#"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
                   About us
                 </NavigationMenuLink>
@@ -149,37 +179,43 @@ const Header = () => {
               <NavigationMenuContent>
                 <div className="w-screen max-w-2xl flex-auto overflow-hidden bg-[#027708] text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 grid grid-cols-3 py-5 px-8 gap-y-7 gap-x-3">
                   <Link
-                    href="/services/content-creation"
+                    // href="/services/content-creation"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Content Creation{" "}
                   </Link>
                   <Link
-                    href="/services/academy"
+                    // href="/services/academy"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Academy{" "}
                   </Link>
                   <Link
-                    href="/services/blockchain-development"
+                    // href="/services/blockchain-development"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Blockchain Services{" "}
                   </Link>
                   <Link
-                    href="/services/media-and-marketing"
+                    // href="/services/media-and-marketing"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Media & Marketing{" "}
                   </Link>
                   <Link
-                    href="/services/crypto-marketing-and-pr"
+                    // href="/services/crypto-marketing-and-pr"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Crypto Marketing & PR{" "}
                   </Link>
                   <Link
-                    href="/services/web-development"
+                    // href="/services/web-development"
+                    href="#"
                     className="text-white text-[15px] font-semibold font-poppins leading-7"
                   >
                     Web Development{" "}
@@ -188,14 +224,24 @@ const Header = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/portfolio" legacyBehavior passHref>
+              <Link
+                // href="/portfolio"
+                href="#"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
                   Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact-us" legacyBehavior passHref>
+              <Link
+                // href="/contact-us"
+                href="#"
+                legacyBehavior
+                passHref
+              >
                 <NavigationMenuLink className="text-black text-lg xl:text-xl font-normal font-montserrat leading-7 whitespace-nowrap">
                   Contact Us
                 </NavigationMenuLink>

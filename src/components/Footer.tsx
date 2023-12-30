@@ -36,7 +36,8 @@ const Footer = () => {
               </p>
               <ul className="flex gap-6 flex-wrap">
                 <li>
-                  <Link href="https://facebook.com/spentdigilabs">
+                  {/* <Link href="https://facebook.com/spentdigilabs"> */}
+                  <Link href="#">
                     <svg
                       width={28}
                       height={28}
@@ -52,7 +53,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://twitter.com/spentdigilabs">
+                  {/* <Link href="https://twitter.com/spentdigilabs"> */}
+                  <Link href="#">
                     <svg
                       width={28}
                       height={28}
@@ -68,7 +70,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://instagram.com/spentdigilabs">
+                  {/* <Link href="https://instagram.com/spentdigilabs"> */}
+                  <Link href="#">
                     <svg
                       width={28}
                       height={28}
@@ -84,7 +87,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://linkedin.com/spentdigilabs">
+                  {/* <Link href="https://linkedin.com/spentdigilabs"> */}
+                  <Link href="#">
                     <svg
                       width="28"
                       height="28"
@@ -100,7 +104,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="http://t.me/Spentdigitallabs">
+                  {/* <Link href="http://t.me/Spentdigitallabs"> */}
+                  <Link href="#">
                     <svg
                       width="28"
                       height="28"
@@ -126,42 +131,49 @@ const Footer = () => {
             <div className="mt-3 grid space-y-3">
               <Link
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
-                href="/services/blockchain-development"
+                // href="/services/blockchain-development"
+                href="#"
               >
                 Blockchain
               </Link>
               <Link
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
-                href="/services/web-development"
+                // href="/services/web-development"
+                href="#"
               >
                 Web Development
               </Link>
               <Link
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
-                href="/services/web-development"
+                // href="/services/web-development"
+                href="#"
               >
                 Mobile App Development
               </Link>
               <Link
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
-                href="/services/web-development"
+                // href="/services/web-development"
+                href="#"
               >
                 Game Development
               </Link>
               <Link
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
-                href="/services/media-and-marketing"
+                // href="/services/media-and-marketing"
+                href="#"
               >
                 Media Marketing
               </Link>
               <Link
-                href="/services/content-creation"
+                // href="/services/content-creation"
+                href="#"
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
               >
                 Content Creation
               </Link>
               <Link
-                href="/services/academy"
+                // href="/services/academy"
+                href="#"
                 className=" text-black text-opacity-90 text-base font-normal font-jost leading-[44.50px] tracking-wide"
               >
                 Digital Skill Training
@@ -176,8 +188,9 @@ const Footer = () => {
             <div className="mt-3 grid space-y-3">
               <div className="flex flex-col sm:flex-row md:flex-col gap-4 justify-center md:justify-start">
                 <Link
-                  href="/"
-                  className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-3 px-2 md:px-8 h-fit"
+                  // href="/"
+                  href="#"
+                  className="bg-[#027808] rounded-[5px] text-white text-sm md:text-base font-medium font-jost leading-normal tracking-tight py-2 px-2 md:px-8 h-fit"
                 >
                   BOOK A MEETING WITH US
                 </Link>
@@ -261,7 +274,8 @@ const Footer = () => {
                             </div>
                           </div>
                           <button
-                            type="submit"
+                            // type="submit"
+                            type="button"
                             className="block w-full rounded-[10px] bg-[#062301] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#062301] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#062301] col-span-full font-jost"
                           >
                             SUBMIT{" "}

@@ -35,7 +35,7 @@ const products: ProductCardProps[] = [
 
 const Product = () => {
   return (
-    <section className="max-w-[90rem] mx-auto py-20 px-6 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  gap-10 md:gap-20 md:overflow-hidden relative ">
+    <section className="max-w-[90rem] mx-auto py-20 px-4 sm:px-8 lg:pt-20 lg:p-20 lg:pb-20 w-full grow flex flex-col  gap-10 md:gap-20 md:overflow-hidden relative ">
       <div className="w-fit">
         <p className="text-zinc-800 text-4xl sm:text-5xl  font-bold font-jost leading-[51.02px] ">
           Our Products
