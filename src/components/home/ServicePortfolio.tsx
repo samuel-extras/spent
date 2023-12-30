@@ -49,7 +49,7 @@ const ServicePortfolio = () => {
             startups, making a significant impact in the industry.
           </p>
         </div>
-        <div className=" flex justify-between pt-28 overflow-hidden relative">
+        <div className=" flex justify-between pt-6 lg:pt-28 overflow-hidden relative">
           <div className="animate-scroll inline-flex min-w-full ">
             <div className="w-[25%] h-[129px] flex justify-center items-center mx-2 lg:mx-6 ">
               <Image src={pepito} alt="pepito" />
